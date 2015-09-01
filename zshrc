@@ -307,8 +307,7 @@ function postexec {
 }
 # }}}
 
-
-# pyenv setup
+# Pyenv setup {{{
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -316,6 +315,7 @@ eval "$(pyenv virtualenv-init -)"
 
 # disable virtualenv from updating the prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+# }}}
 
 alias grep='grep --color=auto'
 
